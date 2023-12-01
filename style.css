@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --sectionPadding: 6rem 0;
+    --itemBorderRadius: 0.7rem;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:"Poppins"
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container{
+        width: 90%;
+    }
+}
+
+/* Title */
+
+.section-title{
+    margin: 1em 0 4em;
+    font-size: 2em;
+}
+
+.pre-title{
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    font-size: 2em;
+}
+
+.pre-title span{
+    color: white;
+}
+
+
+/* Logo ama Navbar */
+    
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+
+/* Logo */
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2em;
+    margin-left: 2.1rem;
+}
+
+.logo img{
+    display: flex;
+    align-items: center;
+    height: 7.5rem;
+}
+
+/* Nav Menu */
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 5rem;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+}
+
+.nav li a:hover {
+    color: #F3B664;
+}
+
+
+/* Hero */
+
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.hero-name{
+    font-size: 7em;
+    font-weight: 700;
+    color: white;
+    padding: 50px;
+}
+
+.hero-name span {
+    color: white;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+} 
+
+.hero-left p {
+    margin-left: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Sesrvice */
+
+.services .pre-title{
+    margin: 0 auto;
+}
+
+.service:hover {
+    box-shadow: rgb(235, 186, 96) 0px 3px 5px 1px;
+}
+
+.services-title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+.service {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: url(image/bg.jpg) 90rem ;
+    border-radius: 1.5rem;
+}
+
+.service p {
+    color: #fbfbfb;
+}
+
+
+
+.service h4 {
+    margin: 1.5rem;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+
+/* product */
+
+#product {
+    padding: 2rem ;
+    margin: 1rem 23px;
+}
+
+.main-container span {
+    color: rgb(255, 255, 255);
+}
+
+.main-container h1 {
+    color: rgb(255, 10, 10);
+}
+
+.products {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 6px solid rgb(174, 143, 106);
+    margin-top: 2rem;
+}
+
+.products:hover {
+    box-shadow: rgb(250, 204, 117) 0px 5px 3px 1px;
+}
+
+.product-cover {
+    height: 250px;
+}
+
+.main-container  {
+    text-align: center;
+}
+.product-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 2rem 1.5rem;
+    background-color: white;
+}
+
+.product h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.product p {
+    padding-top: 1rem;
+}
+
+.product-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.product-tags div {
+    font-size: .9rem;
+    border: 1px solid rgb(249, 221, 184);
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+}
+
+/* footer */
+
+footer {
+    padding: 2rem 0;
+    background: rgb(255, 236, 211);
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.lope {
+    display: flex;
+    cursor: pointer;
+}
+
+.lope p {
+    color: #000;
+    margin-left: 0.2rem;
+}
+
+.footer-icons p a:hover {
+    color: #F3B664;
+}
+  
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons svg {
+    fill: #000000;
+}
+
+.footer-icons a:hover svg {
+    fill: #000;
+}
